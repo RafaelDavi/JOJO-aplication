@@ -1,0 +1,243 @@
+#cardPai {
+    position: fixed;
+    right: 30px;
+    bottom: 0;
+}
+
+.card {
+    width: 370px;
+    height: 160px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin: 20px;
+    float: left;
+    box-shadow: 3px 3px 8px rgb(126, 126, 126);
+    transition: 0.5s;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px blueviolet;
+    scale: 1.1;
+}
+
+.card img {
+    height: 220px;
+    margin-top: -60px;
+    float: left;
+}
+
+.card button {
+    border-radius: 20px;
+    padding: 8px 12px;
+    background-color: blueviolet;
+
+    color: white;
+    border-style: none;
+    float: right;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    transition: 0.1s;
+}
+
+.card button:hover {
+    font-size: 14px;
+}
+
+.card h3 {
+    color: blueviolet;
+}
+
+#charDIV #infoChar {
+    width: 30%;
+    height: 80%;
+    position: fixed;
+    top: 100px;
+    left: 50px;
+    color: white;
+}
+
+/*
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    color: white;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+ nav li{
+    float: left;
+    margin: 0 10px;
+    list-style: none;
+    text-align: center;
+    transition: 0.5s;
+    cursor: Pointer;
+} 
+
+nav li:hover{color: blueviolet;}
+.menuAtivo{color: blueviolet;padding-bottom: 10px; border-bottom: 3px solid blueviolet;} */
+
+
+#charDIV #infoChar h1 {
+    font-size: 90px;
+    letter-spacing: 20px;
+}
+
+#charDIV #infoChar h2 {
+    color: blueviolet;
+}
+
+#perso {
+    position: fixed;
+    top: 100px;
+    right: 100px;
+    transition: 1s;
+}
+
+#user {
+    position: fixed;
+    top: 200px;
+    right: 300px;
+    width: 600px;
+}
+
+#stand {
+    position: fixed;
+    top: 70px;
+    right: 700px;
+    height: 800px;
+    scale: 1;
+    -webkit-animation: right 5s infinite ease-in-out;
+    -moz-animation: right 5s infinite ease-in-out;
+    animation: right 5s infinite ease-in-out;
+
+}
+
+@-webkit-keyframes right {
+    0% {
+        -webkit-transform: scale(1.0) translateX(10px);
+    }
+
+    50% {
+        -webkit-transform: scale(1.05) translateX(-20px);
+    }
+
+    100% {
+        -webkit-transform: scale(1.0) translateX(10px);
+    }
+}
+
+body {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(41, 41, 41, 1) 65%, rgba(0, 0, 0, 1) 100%);
+}
+
+progress {
+    height: 8px;
+    margin-top: 4px;
+    float: right;
+    margin-right: 40%;
+}
+
+.roxo {
+    color: blueviolet;
+}
+
+b {
+    margin-left: 15px;
+}
+
+
+
+
+
+@media only screen and (max-width: 1800px) {
+    body {
+        background: rgb(0, 0, 0);
+        background: linear-gradient(180deg, rgba(0,0,0,1) 7%, rgba(43,43,43,1) 31%, rgba(0,0,0,1) 74%);
+    }
+    #cardPai {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        float: left;
+    }
+
+    #charDIV #infoChar {
+        width: 100%;
+        position: relative;
+        top: auto;
+        left: auto;
+        color: white;
+        float: left;
+    }
+
+    #charDIV #infoChar h1 {
+        font-size: 40px;
+        letter-spacing: 10px;
+    }
+
+    #perso {
+        width: 100%;
+        right: auto;
+        transition: 1s;
+        float: left;
+        position: relative;
+        top: 0px;
+    }
+
+
+    #user {
+        position: relative;
+        top: 15px;
+        left: 0;
+        float: left;
+        height: 400px;
+        width:auto;
+    }
+
+    #stand {
+        position: relative;
+        left: 50px;
+        height: 200px;
+        float: left;
+    }
+
+    .card {
+        width: 90%;
+        margin: 40px 5%;
+        float: left;
+    }
+
+    .card:hover {
+        box-shadow: 0px 0px 10px blueviolet;
+        scale: 1.1;
+    }
+
+    .card img {
+        height: 120%;
+        margin-top: -10%;
+        float: left;
+    }
+
+    .card button {
+        border-radius: 20px;
+        padding: 8px 12px;
+        background-color: blueviolet;
+
+        color: white;
+        border-style: none;
+        float: right;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        transition: 0.1s;
+    }
+
+    .card button:hover {
+        font-size: 14px;
+    }
+}
